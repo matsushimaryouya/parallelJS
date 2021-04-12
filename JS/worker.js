@@ -22,7 +22,7 @@ function WorkThree(){
     const elapsedTime = (endTime - startTime)/1000;
     console.log("WorkThree : " +elapsedTime + "秒");
 }
-
+WorkThree();
 
 // メッセージを受信してコンソールに表示する
 self.addEventListener('message', (message) => {
