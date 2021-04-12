@@ -10,9 +10,19 @@ console.log("core : " + coreNum);
 console.log("memory : " + navigator.deviceMemory + "GB");//メモリー
 
 const startTime = new Date();
-var fizzBuzz = 0;
-var fizz = 0;
-var buzz = 0;
+
+
+
+// Workerを作成する
+const worker = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker.js');
+const worker2 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker2.js');
+
+// メッセージを送信する
+worker.postMessage(startTime);
+worker2.postMessage(startTime);
+
+
+
 function WorkTwo(){
     // fizzBuzz
     var fizzBuzz = 0;
@@ -56,11 +66,3 @@ function WorkOne(){
 
 WorkOne();
 WorkTwo();
-
-// Workerを作成する
-const worker = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker.js');
-const worker2 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker2.js');
-
-// メッセージを送信する
-worker.postMessage(startTime);
-worker2.postMessage(startTime);
