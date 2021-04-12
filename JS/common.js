@@ -1,3 +1,5 @@
+import worker from './worker'
+
 /// OS名を取得
 var OSName = 'Unknown';
 if (navigator.userAgent.indexOf("Win")!=-1) OSName="Windows";
@@ -58,7 +60,7 @@ WorkOne();
 WorkTwo();
 
 // Workerを作成する
-const worker = new Worker('worker.js');
+const worker = new Worker(worker);
 
 // メッセージを送信する
 worker.postMessage('こんにちは！');
