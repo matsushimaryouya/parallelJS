@@ -63,3 +63,4 @@ const worker2 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/wor
 
 // メッセージを送信する
 worker.postMessage(startTime);
+worker2.postMessage(startTime);
