@@ -1,5 +1,3 @@
-import worker from './worker'
-
 /// OS名を取得
 var OSName = 'Unknown';
 if (navigator.userAgent.indexOf("Win")!=-1) OSName="Windows";
