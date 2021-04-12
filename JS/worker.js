@@ -17,7 +17,6 @@ function WorkThree(){
             buzz++;
         }
     }
-    console.log("fizzBuzz : " + fizzBuzz + " fizz : " + fizz + " buzz : " + buzz);
 
     const endTime = new Date();
     const elapsedTime = (endTime - startTime)/1000;
