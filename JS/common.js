@@ -58,7 +58,7 @@ WorkOne();
 WorkTwo();
 
 // Workerを作成する
-const worker = new Worker('worker.js');
+const worker = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker.js');
 
 // メッセージを送信する
 worker.postMessage('こんにちは！');
