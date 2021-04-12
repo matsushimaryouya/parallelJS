@@ -58,7 +58,7 @@ WorkOne();
 WorkTwo();
 
 // Workerを作成する
-const worker = new Worker('/src/worker.js');
+const worker = new Worker('worker.js');
 
 // メッセージを送信する
 worker.postMessage('こんにちは！');
