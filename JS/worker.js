@@ -1,7 +1,8 @@
-const startTime = new Date();
-var fizzBuzz = 0;
-var fizz = 0;
-var buzz = 0;
+// メッセージを受信してコンソールに表示する
+self.addEventListener('message', (message) => {
+    console.log(message.data);
+    var startTime = message.data;
+
 function WorkThree(){
     // fizzBuzz
     var fizzBuzz = 0;
@@ -24,7 +25,4 @@ function WorkThree(){
 }
 WorkThree();
 
-// メッセージを受信してコンソールに表示する
-self.addEventListener('message', (message) => {
-    console.log(message.data);
 });

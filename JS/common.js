@@ -62,4 +62,4 @@ const worker = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/work
 const worker2 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker2.js');
 
 // メッセージを送信する
-worker.postMessage('こんにちは！');
+worker.postMessage(startTime);
