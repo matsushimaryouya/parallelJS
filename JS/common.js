@@ -130,6 +130,7 @@ function sequential(){
 }
 
 function parallel(){
+    startTime = new Date();
     // Workerを作成する
     const worker1 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker1.js');
     const worker2 = new Worker('https://matsushimaryouya.github.io/parallelJS/JS/worker2.js');
