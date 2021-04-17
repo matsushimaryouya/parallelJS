@@ -3,7 +3,7 @@ self.addEventListener('message', (message) => {
     console.log(message.data);
     var startTime = message.data;
 
-function Work2(){
+function Work4(){
     var fizzBuzz = 0;
     var fizz = 0;
     var buzz = 0;
@@ -21,10 +21,10 @@ function Work2(){
 
     const endTime = new Date();
     const elapsedTime = (endTime - startTime)/1000;
-    console.log("Work2 : " + elapsedTime + "秒");
-    document.getElementById("work2").textContent='処理1 : ' + elapsedTime + '秒'+" | fizzBuzz : " + fizzBuzz + " fizz : " + fizz + " buzz : " + buzz;
+    console.log("Work4 : " + elapsedTime + "秒");
+    document.getElementById("work4").textContent='処理1 : ' + elapsedTime + '秒'+" | fizzBuzz : " + fizzBuzz + " fizz : " + fizz + " buzz : " + buzz;
 }
 
-Work2();
+Work4();
 
 });

@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hello, World</h1>
+    <div class="container">
+        <h1>JavaScript | 並列処理</h1>
+        <p id="osName">OS :</p>
+        <p id="coreNum">コア数 :</p>
+        <p id="memoryName">メモリー :</p>
+        <button onclick="sequential()">逐次処理</button>
+        <button onclick="parallel()">並列処理</button>
+    </div>
+    <div class="workContainer">
+        <div class="container">
+            <p id="work1">処理1 : </p>
+            <p id="work2">処理2 : </p>
+            <p id="work3">処理3 : </p>
+            <p id="work4">処理4 : </p>
+            <p id="work5">処理5 : </p>
+        </div>
+    </div>
+
+
     <script src="JS/common.js"></script>
 </body>
 </html>

@@ -1,3 +1,13 @@
-h1{
-    color: blue;
+body{
+    margin: 0;
+}
+.workContainer{
+    width: 100%;
+    background: #000;
+}
+.workContainer p{
+    color: white;
+}
+.container{
+    padding: 10px 20px;
 }
