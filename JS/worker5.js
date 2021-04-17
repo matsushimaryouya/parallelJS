@@ -22,7 +22,7 @@ function Work5(){
     const endTime = new Date();
     const elapsedTime = (endTime - startTime)/1000;
     console.log("Work5 : " + elapsedTime + "秒");
-    document.getElementById("work5").textContent='処理1 : ' + elapsedTime + '秒'+" | fizzBuzz : " + fizzBuzz + " fizz : " + fizz + " buzz : " + buzz;
+    // document.getElementById("work5").textContent='処理1 : ' + elapsedTime + '秒'+" | fizzBuzz : " + fizzBuzz + " fizz : " + fizz + " buzz : " + buzz;
 }
 
 Work5();

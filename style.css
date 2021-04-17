@@ -1,5 +1,9 @@
 body{
     margin: 0;
+    background: #000;
+}
+.topContainer{
+    background: white;
 }
 .workContainer{
     width: 100%;
